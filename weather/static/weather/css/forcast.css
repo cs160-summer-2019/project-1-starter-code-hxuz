@@ -1,0 +1,21 @@
+body {
+  background-image: url("https://raw.githubusercontent.com/cs160-summer-2019/project-1-starter-code-hxuz/master/weather/static/weather/images/bg_home.png");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-rotate1 {
+	transform: rotate(-25deg);
+	transform-origin: 5% -100%;
+}
+
+.text-rotate2 {
+	transform: rotate(25deg);
+  transform-origin: 50;
+}
+
+bt {
+  color: #f4d4d2;
+}

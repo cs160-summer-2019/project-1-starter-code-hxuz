@@ -7,9 +7,118 @@
 	
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/compare.css' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
+
 <body>
-	<!-- your comparison interface here -->
+	<div class="container">
+    <nav class="navbar fixed-top navbar-light" style="background-color: #d6afbb;">
+      <a class="navbar-brand" href="#">
+        <input type="image" src="/static/weather/images/back.png" name="saveForm" class="btTxt submit d-inline-block align-top" id="saveForm" style="height: 30px;" alt=""/>
+      </a>
+      <form class="form-inline">
+        <input type="image" name="saveForm" class="btTxt submit" id="saveForm" style="float: right; height: 30px;" src="/static/weather/images/add.png"  alt=""/>
+      </form>
+    </nav>
+  </div>
+  
+  <div style="padding: 20px;">
+    <div class="container" style="padding: 50px 20px 20px 20px">
+      <div class="row">
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>Berkeley</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/sunny.png" width="84" />
+              </p>
+              <p>
+                75°F Sunny
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>San Francisco</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/cloudy.png" width="84" />
+              </p>
+              <p>
+                67°F Cloudy
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">  
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>Oakland</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/sunny.png" width="84" />
+              </p>
+              <p>
+                82°F Sunny
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>Los Angeles</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/sunny.png" width="84" />
+              </p>
+              <p>
+                86°F Sunny
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>Las Vagas</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/sunny.png" width="84" />
+              </p>
+              <p>
+                84°F Sunny
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="card bg-opacity mb-3" style="width: 21rem; height: 9.5rem">
+          <div class="card-header">Th 6/27 6:43PM</div>
+            <div class="card-body">
+              <p><b>Santa Barbara</b>
+                 <img style="float: right; margin: -10px 0px 0px 15px;" src="/static/weather/images/sunny.png" width="84" />
+              </p>
+              <p>
+                88°F Sunny
+                <br style="clear: both;" />
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 </body>
 </html>

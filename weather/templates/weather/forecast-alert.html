@@ -7,10 +7,78 @@
 	
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/forcast.css' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body>
-	<!-- your single-location forecast with alert interface here -->
+<body class="text-center">
+  
+  <div class="container">
+    <nav class="navbar fixed-top navbar-light" style="background-color: #F4D4D2;">
+      <a class="navbar-brand" href="#" style="padding: 0px 0px 0px 120px">
+        <input type="image" src="/static/weather/images/search.png" name="saveForm" class="btTxt submit d-inline-block align-top" id="saveForm" style="height: 24px;" alt=""/> Berkeley
+      </a>
+      <form class="form-inline">
+        <input type="image" name="saveForm" class="btTxt submit" id="saveForm" style="float: right; height: 30px;" src="/static/weather/images/alert.png"  alt=""/>
+      </form>
+    </nav>
+  </div>
+  
+  <div>
+    <div class="container" style="padding: 60px 20px 0px 20px">
+      <img class="img-fluid" src="/static/weather/images/travel.png" align="middle" style="height: 36px;">
+    </div>
+    
+    <div align="middle" style="padding: 30px 20px 0px 20px;">
+        <div class="card mb-3" style="width: 300px; height: 250px;">
+          <div class="card-header text-center"><h4>Alert</h4></div>
+            <div class="card-body  text-center">
+              <input type="image" src="/static/weather/images/alert.png" width="48" />
+              <p>Your current location has extreme weather</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary" style="float: left;">Dismiss</a><a href="#" class="btn btn-sm  btn-secondary" style="float: right;"/>See details</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div>
+    <div class="container">
+      <p class="text-center">
+        <b >Th 6/27 6:43 PM</b>
+      </p>
+      <p class="text-center" style="padding: 40px 0px 0px 0px">
+        <b>T 6/27</b>
+      </p>
+      <p style="padding: -20px 0px 0px 0px">
+        W 6/26
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        F 6/28
+      </p>
+      <p class="text-center">
+        <b>6 PM</b>
+      </p>
+      <p style="padding: -20px 0px 0px 0px">
+        &nbsp;&nbsp;&nbsp;5 PM
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        7 PM
+      </p>
+    </div>
+  </div>
+  
+  <div class="container text-left ">
+    <bt>°C/<b>°F</b></bt> 
+    <input type="image" src="/static/weather/images/compare.png" name="saveForm" class="btTxt submit d-inline-block align-top" id="saveForm" style="float: right; height: 30px;" alt=""/>
+  </div>
+  
+  
 </body>
 </html>
 
